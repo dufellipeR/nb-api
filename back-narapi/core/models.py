@@ -6,7 +6,7 @@ class Character(models.Model):
     desc = models.CharField(max_length=255, blank=True, null=True)
     clan = models.CharField(max_length=64, blank=True, null=True)
     age = models.CharField(max_length=64, blank=True, null=True)
-    photo = models.ImageField(upload_to='assets', blank=True, null=True)
+    photo = models.ImageField(upload_to='media', blank=True, null=True)
     ninjutsu = models.IntegerField(blank=True, null=True)
     taijutsu = models.IntegerField(blank=True, null=True)
     genjutsu = models.IntegerField(blank=True, null=True)
